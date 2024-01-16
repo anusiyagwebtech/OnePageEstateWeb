@@ -1,0 +1,180 @@
+@media (max-width: 992px){
+    .header .header-data {
+      width: 75%;
+    }
+ }
+ @media (max-width: 768px){
+     
+     .btn {
+        text-decoration: none;
+        color: black;
+        padding: 10px 0px;
+        /* border-radius: 20px; */
+        border: 0px;
+        transition: 0.4s;
+
+     }
+     .btn:hover{
+        background: none;
+        color: rgb(3, 3, 97);
+     }
+     .header .header-data {
+         display: none;
+     }
+     .header .header-data.block{
+        
+        display: block;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        right: 0px;
+        color: rgb(5, 5, 5);
+        width: 50%;
+        height: 100vh;
+        padding: 20px;
+        background: aliceblue;
+        background: rgba(0,0,0,1);
+        justify-content: flex-start;
+        box-shadow: 2px 3px 8px black;
+        /* backdrop-filter: blur(8px); */
+    }
+    .header .header-data.block .wrong{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 30px ;
+        right: 20px;
+        color: aliceblue;
+    }
+    
+    .header .header-data.block ul{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+       
+    }
+    .header .header-data.block ul li{
+        width: 100%;
+        text-align: start;
+    }
+    .header .header-data.block ul li a{
+        color: aliceblue;
+    }
+     .header .handburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .home-section{
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .home-section .content{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .card-section .head-btn{
+        flex-direction: column;
+    }
+    .card-section .card-group .card {
+        width: calc(100vw/3);
+        height: fit-content;
+    }
+    .ronovation-section {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .ronovation-section .reno-img {
+        margin-top: 20px;
+        width: 80vw;
+        height: 300px;
+        object-fit: fill;
+    }
+    .ronovation-section .reno-content {
+        width: 100vw;
+        margin-left: 0px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        padding: 10%;
+    }
+    .ronovation-section .reno-content h2 {
+        font-size: 23px;
+    }
+    .ronovation-section .reno-content p{
+        text-align: justify;
+    }
+    .ronovation-section.reverse {
+        flex-direction: column;
+
+    }
+    
+ }
+ @media (max-width: 576px){
+header .header-data.block{
+    width: 90% !important;
+}
+header .header-data.block ul li a{ 
+  color: black;   
+}
+
+    .home-section{
+        padding-top: 50px;
+    }
+    .home-section .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .home-section .content h1{
+        font-size: 23px;
+    }
+    .home-section .content .row-box{
+        flex-direction: column;
+    }
+.home-section .content .row-box .statement{
+    width: 70vw;
+}
+.card-section .card-group {
+    padding: 0px;
+}
+
+.card-section .card-group .card {
+    width: calc(100vw/1.5);
+    height: fit-content;
+}
+.youtube {
+    padding: 5%;
+    height: 90vw;
+}
+.customer-section h5 ,.customer-section .custom-testimonial {
+    padding: 5%;
+}
+   
+.custom-title {
+    padding: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Testimonial-Cards {
+    padding: 30px 5%;
+}
+.testimonial-card {
+    width: 100vw;
+}
+ }
+
+ @media (max-width: 300px) {
+    .card-group{
+        padding: 0px !important;
+    }
+    .card-section .card-group .card {
+        width: 90vw;
+        height: fit-content;
+    }
+   
+ }

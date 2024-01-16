@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Estate website</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+   <header>
+      <div class="header">
+         <div class="logo"><i class="fa-solid fa-house"></i><span>Welthhome</span></div>
+         <div class="handburger-menu" onclick="menu()"><i class="fa-solid fa-bars"></i></div>
+         <div class="header-data">
+            <div class="wrong" onclick="dissapear()"><i class="fa-solid fa-xmark"></i></div>
+            <ul>
+               <li><a href="#Home" class="Indicate">Home</a></li>
+               <li><a href="#gallery">Gallery</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#testimonial">Testimonials</a></li>
+            </ul>
+            <ul>
+               <li><a href="#">Login</a></li>
+               <li><a href="#" class="btn">Get Started</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="loader-bowl">
+         <div class="loader-bar" id="loader-bar"></div>
+      </div>
+   </header>
+   <section class="home-section" id="Home">
+
+      <div class="content">
+         <h1>Find a place where you can be yourself.</h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quae quo atque rem assumenda totam illo
+            sequi dolorum!</p>
+         <div class="row-box">
+            <div class="statement">
+               <div class="state-content">
+                  <h5>hi</h5>
+                  <!-- <select name="hi" id="">
+               <option value="1">1</option>
+               <option value="1">1</option>
+            </select> -->
+
+                  <div class="custom-select" onclick="select(this)">
+                     <div class="input-box">
+                        <input type="text" value="select"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                     <div class="select-options">
+                        <p>Buy</p>
+                        <p>Sell</p>
+                        <p>Rent</p>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="icon">
+                  <i class="fa-solid fa-share"></i>
+               </div>
+            </div>
+            <div class="statement">
+               <div class="state-content">
+                  <h5>hi</h5>
+                  <div class="custom-select" onclick="select(this)">
+                     <div class="input-box">
+                        <input type="text" value="select"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                     <div class="select-options">
+                        <p>Buy</p>
+                        <p>Sell</p>
+                        <p>Rent</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="icon">
+                  <i class="fa-solid fa-share"></i>
+               </div>
+            </div>
+            <div class="statement">
+               <div class="state-content">
+                  <h5>hi</h5>
+                  <div class="custom-select" onclick="select(this)">
+                     <div class="input-box">
+                        <input type="text" value="select"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                     <div class="select-options">
+                        <p>Buy</p>
+                        <p>Sell</p>
+                        <p>Rent</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="icon">
+                  <i class="fa-solid fa-share"></i>
+               </div>
+            </div>
+            <div class="searchbtn">
+               <button class="btn2"> <span>Search </span><span><i
+                        class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section reveal" id="gallery">
+      <div class="card-section">
+         <h2>Best Home In Your City</h2>
+         <div class="head-btn">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, omnis!<br /> Nisi minus doloribus
+               dolorem quae!</p>
+            <a href="#" class="btn">Explore More <i class="fa-solid fa-arrow-trend-up"></i></a>
+         </div>
+         <div class="card-group reveal">
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img"><img src="img/1.jpg"><i class="fa-regular fa-heart" onclick="heart(this)"></i>
+               </div>
+               <div class="card-content">
+                  <h4>$56.8</h4>
+                  <h5>COVA Home Reality</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+               </div>
+               <div class="card-footer">
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+                  <span><i class="fa-solid fa-user"></i> 3read</span>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="reveal" id="about">
+      <div class="ronovation-section reveal">
+         <div class="reno-img"><img src="img/5.jpg"></div>
+         <div class="reno-content">
+            <h2>We Specialize In Quality Home Renovations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut cum non, aliquam ut omnis iste
+               reiciendis ipsam perferendis eaque consequatur fugiat molestiae? Nisi!</p>
+            <div class="reno-lists">
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+            </div>
+         </div>
+      </div>
+      <div class="ronovation-section reverse reveal">
+         <div class="reno-img"><img src="img/6.jpg"></div>
+         <div class="reno-content">
+            <h2>We Specialize In Quality Home Renovations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut cum non, aliquam ut omnis iste
+               reiciendis ipsam perferendis eaque consequatur fugiat molestiae? Nisi!</p>
+            <div class="reno-lists">
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+               <div class="reno-list"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;<span>Smart Home</span></div>
+            </div>
+         </div>
+      </div>
+      <div class="youtube reveal">
+         <iframe src="://www.youtube.com/embed/zumJJUL_ruM?si=bNteZcdxLOyU_PVF" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+      </div>
+   </section>
+   <section class="reveal" id="testimonial">
+      <div class="customer-section">
+         <h5>Our Customers</h5>
+         <div class="custom-title">
+            <h2>We Help 1000+ Families to find <br> thier true home</h2>
+            <a href="#" class="btn">View all sources <i class="fa-solid fa-arrow-trend-up"></i></a>
+         </div>
+         <div class="custom-testimonial">
+            <div class="person"><img src="img/p1.jpg" alt=""></div>
+            <div class="person"><img src="img/p2.jpg" alt=""></div>
+            <div class="person"><img src="img/p5.jpg" alt=""></div>
+            <div class="person">
+               <div class="num">+90</div>
+            </div>
+         </div>
+      </div>
+      <div class="Testimonial-Cards">
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <div class="t-card-title">
+               <h5>Cris Tragger</h5>
+               <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> &nbsp;&nbsp; 5.0</h5>
+            </div>
+            <div class="t-img">
+               <img src="img/p1.jpg" alt="">
+            </div>
+         </div>
+      </div>
+
+
+   </section>
+   <footer>
+      <h1>Interio Design</h1>
+      <div class="footer">
+         <ul class="list">
+            <li>Beautiful House</li>
+            <li>Interior Design</li>
+            <li>Roof Top</li>
+            <li>Garden Design</li>
+            <li>Clean House</li>
+         </ul>
+         <ul class="list ">
+            <li>Interio</li>
+            <li>Press Room</li>
+            <li>Advertise Online</li>
+            <li>Give a Gift</li>
+            <li>Find a Designer</li>
+         </ul>
+         <ul class="list ">
+            <li>Newsletter</li>
+            <li>Contact Us</li>
+            <li>Give Aways</li>
+            <li>Subscribe</li>
+         </ul>
+
+         <ul class="list ">
+            <li>Media Git</li>
+            <li>Community Guidelines</li>
+            <li>Other Hearst Subscriptions</li>
+            <li>Shop at Daring Hall</li>
+            <li>Events & Promotions</li>
+         </ul>
+      </div>
+   </footer>
+</body>
+
+</html>
